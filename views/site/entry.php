@@ -10,9 +10,9 @@ use yii\widgets\ActiveForm;
 ?>
 <?php $form = ActiveForm::begin(); ?>
 
-<?= $form->field($model, 'name') ?>
+<?= $form->field($model, 'name')->label('请输入name') ?>
 
-<?= $form->field($model, 'email') ?>
+<?= $form->field($model, 'email')->label('请输入email') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
